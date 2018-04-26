@@ -10,5 +10,17 @@ module.exports = function(wallaby) {
     },
     // https://wallabyjs.com/docs/integration/jest.html
     testFramework: "jest",
+    setup: function(wallaby) {
+      wallaby.testFramework.configure({
+        globals: {
+          __DEV__: true,
+        },
+        setupFiles: ["./config/jest/setupPixi.js"],
+        testEnvironment: "jest-environment-jsdom-with-canvas",
+        transform: {
+          "^.+\\.js$": "babel-jest",
+        },
+      });
+    },
   };
 };
