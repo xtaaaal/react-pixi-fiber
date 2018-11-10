@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Expose `applyProps` from `ReactPixiFiber` ([#95])
 - Added example of "native" Animated target for `react-pixi-fiber` ([#95])
+- Added ReactDOM-like prop validation in development ([#47])
 
 ### Fixed
 - Fixed `customDidAttach` of example `<DraggableContainer />` component ([#91])
