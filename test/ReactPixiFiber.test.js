@@ -350,8 +350,8 @@ describe("ReactPixiFiber", () => {
       const width = 32;
       ReactPixiFiber.createInstance(TYPES.TILING_SPRITE, { height, texture, width });
 
-      expect(PIXI.extras.TilingSprite).toHaveBeenCalledTimes(1);
-      expect(PIXI.extras.TilingSprite).toHaveBeenCalledWith(texture, width, height);
+      expect(PIXI.TilingSprite).toHaveBeenCalledTimes(1);
+      expect(PIXI.TilingSprite).toHaveBeenCalledWith(texture, width, height);
     });
 
     it("returns injected instance if type was injected", () => {

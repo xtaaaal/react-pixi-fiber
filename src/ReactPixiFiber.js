@@ -159,7 +159,7 @@ export function createInstance(type, props, internalInstanceHandle) {
       instance = new PIXI.Text(props.text, props.style, props.canvas);
       break;
     case TYPES.TILING_SPRITE:
-      instance = new PIXI.extras.TilingSprite(props.texture, props.width, props.height);
+      instance = new PIXI.TilingSprite(props.texture, props.width, props.height);
       break;
     default:
       instance = createInjectedTypeInstance(type, props, internalInstanceHandle, defaultApplyProps);
